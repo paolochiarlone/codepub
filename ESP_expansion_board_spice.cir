@@ -1,0 +1,17 @@
+ESP_expansion_board
+R7 13 55 220
+R8 12 54 220
+R6 6 23 3.3k
+R4 4 22 3.3k
+R3 18 7 3.3k
+R2 8 7 3.3k
+R5 5 21 3.3k
+D1 19 7 DI_1N5817
+R1 11 7 220
+
+*SRC=1N5817;DI_1N5817;Diodes;Si;  20.0V  1.00A  3.00us   Diodes Inc. Schottky Barrier Rectifier
+.MODEL DI_1N5817 D  ( IS=870u RS=81.3m BV=20.0 IBV=1.00m CJO=203p  M=0.333 N=1.81 TT=4.32u )
+
+.TRAN 1ms 100ms
+* .AC DEC 100 100 1MEG
+.END
